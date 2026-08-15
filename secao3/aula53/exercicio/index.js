@@ -4,3 +4,9 @@ const elementos = [
     { tag: "footer", texto: "Frase 3" },
     { tag: "section", texto: "Frase 4" },
 ];
+
+for (let i = 0; i < elementos.length; i++) {
+    console.log(
+        `O elemento ${elementos[i].tag} deve receber o texto ${elementos[i].texto}`,
+    );
+}
