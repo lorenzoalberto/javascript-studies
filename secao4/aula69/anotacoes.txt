@@ -1,0 +1,4 @@
+Os argumentos de uma função são associados aos parâmetros pela posição em que são passados. Quando um parâmetro possui
+um valor padrão, podemos utilizar undefined na chamada da função para manter esse valor,
+como em funcao(10, undefined, 23). O JavaScript não possui argumentos nomeados nativamente, portanto não é possível
+escolher diretamente quais parâmetros serão preenchidos durante a chamada.
