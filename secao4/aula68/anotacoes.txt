@@ -1,0 +1,5 @@
+Um first-class object (ou first-class citizen) é um elemento que uma linguagem de programação trata como um valor comum,
+permitindo que ele seja atribuído a variáveis, passado como argumento para funções, retornado por outras funções e
+armazenado em estruturas de dados, como arrays e objetos.
+Essa característica é fundamental para conceitos como callbacks e higher-order functions.
+Funções são Objetos de Primeira Classe.
