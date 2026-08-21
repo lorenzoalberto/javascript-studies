@@ -1,3 +1,0 @@
-O querySelector do DOM seleciona a primeira occorrência que achar do argumento colocado.
-
-NodeList funciona quase parecido com um array.
