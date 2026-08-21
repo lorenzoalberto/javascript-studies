@@ -1,7 +1,0 @@
-As APIs setTimeout e setInterval são funções utilizadas no JavaScript para agendar a execução de código de forma
-assíncrona com base no tempo. O setTimeout agenda uma função para ser executada uma única vez, após transcorrido,
-no mínimo, o intervalo de tempo especificado em milissegundos; já o setInterval agenda a execução repetida de uma
-função, utilizando o intervalo informado entre as execuções. É importante observar que o tempo definido nessas APIs
-não garante o momento exato da execução, pois a callback somente poderá ser processada quando a Call Stack estiver
-disponível, de acordo com o funcionamento do Event Loop. Ambas retornam um identificador que permite cancelar o
-agendamento: clearTimeout() para um setTimeout e clearInterval() para um setInterval.
