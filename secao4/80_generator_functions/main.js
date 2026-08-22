@@ -12,6 +12,10 @@ function* contador() {
 }
 
 const numeros = contador();
-numeros.next();
-numeros.next();
-numeros.next();
+console.log(numeros.next());
+console.log(numeros.next());
+console.log(numeros.next());
+
+/* 
+É possível usar .done e .value também.
+*/
