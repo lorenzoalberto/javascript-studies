@@ -1,3 +1,4 @@
+// Retorno da função
 function criarDesconto(porcentagem) {
     function calcular(preco) {
         return preco - (preco * porcentagem) / 100;

@@ -1,3 +1,4 @@
+// Funções fábrica (Factory Functions)
 function criarUsuario(nome, idade) {
     return {
         nome,

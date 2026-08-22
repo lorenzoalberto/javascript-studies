@@ -1,3 +1,4 @@
+// Closures
 function processarUsuario(nome, callback) {
     console.log(`Processando usuário: ${nome}`);
 
