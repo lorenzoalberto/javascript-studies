@@ -1,3 +1,4 @@
+// For - Clássico - Estrutura de repetição
 for (let i = 0; i <= 5; i++) {
     console.log(i);
 }

@@ -1,3 +1,4 @@
+// For in - Estrutura de repetição
 const frutas = ["maçã", "banana", "uva"];
 
 for (let fruta in frutas) {

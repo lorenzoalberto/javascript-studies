@@ -1,3 +1,4 @@
+// Exercício com lógica de programação - 01
 function maiorNumero(num1, num2) {
     return x > y ? x : y;
 }

@@ -1,3 +1,4 @@
+// Switch/Case
 const diaSemana = new Date().getDay();
 
 switch (diaSemana) {

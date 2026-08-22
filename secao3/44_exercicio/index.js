@@ -1,3 +1,4 @@
+// Exercício (unindo tudo aprendido até aqui e mais)
 const peso = 120;
 const alturaMetro = 1.71;
 

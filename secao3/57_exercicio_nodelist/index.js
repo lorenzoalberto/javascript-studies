@@ -1,3 +1,4 @@
+// Exercícios com NodeList (Browser)
 const paragrafos = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Pellentesque volutpat nulla nec dapibus semper.",

@@ -1,3 +1,4 @@
+// Exercício com lógica de programação - 03
 function fizzBuzz(numero) {
     const numeroValido =
         Number.isFinite(numero) && (numero >= 0) & (numero <= 100);
