@@ -1,3 +1,4 @@
+// Diferença entre o this em Arrow Functions e Normal Functions
 const pessoa = {
     nome: "Lorenzo",
 
