@@ -1,3 +1,4 @@
+// alert, confirm e prompt (Navegador)
 const num1 = 10;
 const num2 = 10;
 

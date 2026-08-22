@@ -1,3 +1,4 @@
+// Exercício com variáveis
 // Variável A deve receber "B"
 // Variável B deve receber "C"
 // Variável C deve receber "A"

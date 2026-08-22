@@ -1,3 +1,4 @@
+// Exercícios com numbers e Math
 const num = 55.1987555;
 
 console.log(`Raiz quadrada: ${num ** 0.5}`);

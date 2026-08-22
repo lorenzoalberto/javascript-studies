@@ -1,3 +1,4 @@
+// Exercícios com strings
 let nome = "Lorenzo Alberto de Figueiredo Aragão";
 
 console.log(`Seu nome tem ${nome.length} letras`);

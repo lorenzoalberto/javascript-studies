@@ -1,3 +1,4 @@
+// Objetos (Básico)
 function criaObjeto(nome, sobrenome, idade) {
     return { nome, sobrenome, idade };
 }

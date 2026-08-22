@@ -1,3 +1,4 @@
+// Exercícios - Const e Let
 const name = "Luiz Otávio";
 const age = 30;
 const weight = 84;
