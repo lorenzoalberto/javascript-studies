@@ -2,5 +2,9 @@
 const frutas = ["maçã", "banana", "uva"];
 
 for (let fruta in frutas) {
-    console.log(frutas[fruta]);
+  console.log(frutas[fruta]);
 }
+
+/*
+for..in é muito usado em objetos.
+*/
