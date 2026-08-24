@@ -17,10 +17,13 @@ Saída esperada:
 */
 
 function criarProduto(nome, preco, quantidade) {
-    // TODO: devolva o objeto solicitado.
+  const total = preco * quantidade;
+  return { nome, preco, quantidade, total };
 }
 
 const produtos = [];
 
-// TODO: crie os dois produtos, adicione-os ao array e exiba o resultado.
+produtos.push(criarProduto("Teclado", 120, 2));
+produtos.push(criarProduto("Mouse", 80, 3));
 
+console.log(produtos);
