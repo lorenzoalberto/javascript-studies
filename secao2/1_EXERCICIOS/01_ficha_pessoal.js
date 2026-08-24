@@ -17,5 +17,9 @@ const idade = 28;
 const peso = 64;
 const altura = 1.68;
 
-// TODO: calcule o IMC e exiba a frase pedida.
+const imc = peso / (altura * altura); // aqui se armazena o valor do IMC, não o calculo - então a váriavel não é
+// calculoIMC
 
+console.log(
+    `${nome} ${sobrenome} tem ${idade} anos e seu IMC é ${imc.toFixed(2)}.`,
+);
