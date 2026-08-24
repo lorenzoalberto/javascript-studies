@@ -12,7 +12,12 @@ Casos para testar:
 NaN -> Temperatura inválida
 */
 
-const temperatura = 22;
+const temperatura = NaN;
+const temperaturaValida = Number.isFinite(temperatura);
 
-// TODO: valide e classifique a temperatura usando if/else.
-
+if (!temperaturaValida) console.log("Temperatura inválida");
+else {
+  if (temperatura >= 15 && temperatura <= 25) console.log("Agradável");
+  else if (temperatura > 25) console.log("Quente");
+  else console.log("Frio");
+}
