@@ -17,5 +17,9 @@ Duas casas: 49.57
 
 const numero = 49.567;
 
-// TODO: gere o relatório usando Number e Math.
-
+console.log(`Raiz: ${Math.sqrt(numero)}`);
+console.log(`Para baixo: ${Math.floor(numero)}`);
+console.log(`Para cima: ${Math.ceil(numero)}`);
+console.log(`Duas casas: ${numero.toFixed(2)}`); // lembrando que retorna uma string
+console.log(`É inteiro: ${Number.isInteger(numero)}`);
+console.log(`É NaN: ${Number.isNaN(numero)}`);
