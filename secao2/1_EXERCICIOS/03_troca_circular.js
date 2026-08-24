@@ -14,7 +14,18 @@ let primeiro = "A";
 let segundo = "B";
 let terceiro = "C";
 
-// TODO: faça a troca circular.
+// variável auxiliar
+let x = primeiro;
+primeiro = segundo;
+segundo = terceiro;
+terceiro = x;
 
 console.log(primeiro, segundo, terceiro);
 
+primeiro = "A";
+segundo = "B";
+terceiro = "C";
+
+// desestruturação
+[primeiro, segundo, terceiro] = [segundo, terceiro, primeiro];
+console.log(primeiro, segundo, terceiro);
