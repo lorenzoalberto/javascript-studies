@@ -15,5 +15,12 @@ Desafio extra: altere uma única constante para gerar um tabuleiro 8 x 8.
 
 const tamanho = 4;
 
-// TODO: monte e exiba o tabuleiro.
+for (let i = 0; i < tamanho; i++) {
+  console.log("#");
+  console.log(" ");
 
+  for (let j = 0; j < tamanho; j++) {
+    console.log(" ");
+    console.log("#");
+  }
+}
