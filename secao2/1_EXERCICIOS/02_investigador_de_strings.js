@@ -22,4 +22,11 @@ EU ESTUDO JAVASCRIPT TODOS OS DIAS
 
 const frase = "Eu estudo JavaScript todos os dias";
 
-// TODO: use propriedades e métodos de string para produzir as cinco saídas.
+const palavrasFrase = frase.split(" "); // .split() já retorna um array, então [...frase.split(" ")] não é necessário
+
+console.log(frase.length);
+console.log(palavrasFrase[0]);
+console.log(palavrasFrase[palavrasFrase.length - 1]);
+console.log(frase.toUpperCase());
+console.log(frase.indexOf("JavaScript"));
+console.log(palavrasFrase);
