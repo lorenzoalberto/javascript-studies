@@ -14,6 +14,26 @@ O código deve funcionar também quando a letra vier minúscula.
 */
 
 const codigo = "l";
+const codigoNormalizado = codigo.toUpperCase();
 
-// TODO: normalize o código e implemente o switch.
+switch (codigoNormalizado) {
+  case "C":
+    console.log("Criar cadastro");
+    break;
 
+  case "L":
+    console.log("Listar cadastros");
+    break;
+
+  case "A":
+    console.log("Atualizar cadastro");
+    break;
+
+  case "E":
+    console.log("Excluir cadastro");
+    break;
+
+  default:
+    console.log("Opção inválida");
+    break;
+}
