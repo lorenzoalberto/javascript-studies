@@ -10,9 +10,22 @@ Bruno: 6.00
 */
 
 const alunos = [
-    { nome: "Ana", notas: { prova1: 7, prova2: 9 } },
-    { nome: "Bruno", notas: { prova1: 5, prova2: 7 } },
+  { nome: "Ana", notas: { prova1: 7, prova2: 9 } },
+  { nome: "Bruno", notas: { prova1: 5, prova2: 7 } },
 ];
 
-// TODO: percorra os dados, calcule e exiba as médias.
+for (let aluno of alunos) {
+  for (let i in aluno) {
+    if (typeof aluno[i] === "object") {
+      let arrayNotas = Object.values(aluno[i]);
 
+      let soma = 0;
+      for (let nota of arrayNotas) {
+        soma += nota;
+      }
+      let media = soma / arrayNotas.length;
+
+      console.log(`${aluno["nome"]}: ${media.toFixed(2)}`);
+    }
+  }
+}
