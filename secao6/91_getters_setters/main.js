@@ -1,3 +1,4 @@
+// Getters e Setters
 class Pessoa {
   constructor(nome, idade) {
     this._nome = nome;
