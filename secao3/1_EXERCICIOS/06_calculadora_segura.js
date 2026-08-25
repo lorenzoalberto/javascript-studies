@@ -12,10 +12,27 @@ dividir("10", 2) -> Os argumentos precisam ser números finitos.
 */
 
 function dividir(dividendo, divisor) {
-    // TODO: valide, lance os erros e retorne a divisão.
+  const dividendoValido = Number.isFinite(dividendo);
+  const divisorValido = Number.isFinite(divisor);
+
+  if (!dividendoValido || !divisorValido)
+    throw new TypeError("Os argumentos precisam ser números finitos.");
+
+  if (divisor === 0) throw new Error("Não é possível dividir por zero.");
+
+  return dividendo / divisor;
 }
 
-const testes = [[10, 2], [10, 0], ["10", 2]];
+const testes = [
+  [10, 2],
+  [10, 0],
+  ["10", 2],
+];
 
-// TODO: percorra os testes e trate individualmente cada possível erro.
-
+for (const teste of testes) {
+  try {
+    console.log(dividir(teste[0], teste[1]));
+  } catch (e) {
+    console.log(e.message);
+  }
+}
