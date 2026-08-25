@@ -18,11 +18,8 @@ const tamanho = 8;
 for (let i = 0; i < tamanho; i++) {
   let linha = "";
   for (let j = 0; j < tamanho; j++) {
-    if ((i + j) % 2 === 0) {
-      linha += "#";
-    } else {
-      linha += " ";
-    }
+    if ((i + j) % 2 === 0) linha += "#";
+    else linha += " ";
   }
 
   console.log(linha);
