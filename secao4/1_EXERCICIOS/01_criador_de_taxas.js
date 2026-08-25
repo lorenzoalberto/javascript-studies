@@ -11,8 +11,13 @@ adicionarIcms(250) -> 295
 */
 
 function adicionarTaxa(porcentagem) {
-    // TODO: retorne uma função que mantém acesso à porcentagem.
+  function preco(taxa) {
+    return taxa + (taxa * porcentagem) / 100;
+  }
+
+  return preco;
 }
 
-// TODO: crie a função adicionarIcms e teste as duas entradas.
-
+const adicionarIcms = adicionarTaxa(18);
+console.log(adicionarIcms(100));
+console.log(adicionarIcms(250));
