@@ -11,8 +11,21 @@ Casos importantes:
 */
 
 function fizzBuzz(numero) {
-    // TODO: valide e retorne o resultado.
+  const numeroValido =
+    Number.isFinite(numero) &&
+    numero >= 0 &&
+    numero <= 100 &&
+    Number.isInteger(numero);
+
+  if (numeroValido) {
+    if (numero % 5 === 0 && numero % 3 === 0) return "FizzBuzz";
+    if (numero % 3 === 0) return "Fizz";
+    if (numero % 5 === 0) return "Buzz";
+
+    return numero;
+  }
+
+  return "Inválido";
 }
 
-// TODO: chame a função para todos os números de 0 a 100.
-
+for (let i = 0; i < 101; i++) console.log(`${i}: ${fizzBuzz(i)}`);
