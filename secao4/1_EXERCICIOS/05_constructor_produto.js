@@ -14,8 +14,20 @@ Use funções normais nos métodos e observe por que `this` é necessário.
 */
 
 function Produto(nome, preco) {
-    // TODO: inicialize as propriedades e os métodos.
+  this.nome = nome;
+  this.preco = preco;
+
+  this.aplicarDesconto = function (porcentagem) {
+    const novoPrecoDescontado = this.preco - this.preco * (porcentagem / 100);
+    this.preco = novoPrecoDescontado;
+    return this.preco;
+  };
+
+  this.descrever = function () {
+    return `${this.nome} custa R$ ${this.preco.toFixed(2)}`;
+  };
 }
 
-// TODO: crie e teste o produto do exemplo.
-
+const produto = new Produto("Cadeira", 200);
+console.log(produto.aplicarDesconto(10));
+console.log(produto.descrever());
