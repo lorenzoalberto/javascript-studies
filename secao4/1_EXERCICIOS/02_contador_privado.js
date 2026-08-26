@@ -14,8 +14,23 @@ contador.valor() -> 11
 */
 
 function criarContador(inicial) {
-    // TODO: use closure para manter o estado privado.
+  return {
+    incrementar() {
+      // inicial++;
+      // return inicial; isso pode ser trocado pelo abaixo
+      return ++inicial;
+    },
+    decrementar() {
+      --inicial;
+    },
+    valor() {
+      return inicial;
+    },
+  };
 }
 
-// TODO: execute a sequência do exemplo e exiba cada retorno.
-
+const contador = criarContador(10);
+console.log(contador.incrementar());
+console.log(contador.incrementar());
+console.log(contador.decrementar());
+console.log(contador.valor());
