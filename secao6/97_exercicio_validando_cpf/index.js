@@ -19,9 +19,7 @@ for (let numero of cpfArrayAnalise) {
   i--;
 }
 let primeiroDigito = 11 - (acumulador % 11);
-if (primeiroDigito > 9) {
-  primeiroDigito = 0;
-}
+primeiroDigito > 9 ? 0 : primeiroDigito;
 cpfArrayAnalise.push(primeiroDigito);
 
 acumulador = 0;
@@ -31,9 +29,7 @@ for (let numero of cpfArrayAnalise) {
   i--;
 }
 let segundoDigito = 11 - (acumulador % 11);
-if (segundoDigito > 9) {
-  segundoDigito = 0;
-}
+segundoDigito > 9 ? 0 : segundoDigito;
 cpfArrayAnalise.push(segundoDigito);
 
 const saoIguais =
