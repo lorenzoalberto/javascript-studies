@@ -1,3 +1,4 @@
+// Herança
 class Animal {
   constructor(nome, idade) {
     this.nome = nome;
