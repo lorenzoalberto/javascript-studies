@@ -11,8 +11,16 @@ processarTexto("curso de js", paraSlug) -> curso-de-js
 */
 
 function processarTexto(texto, transformacao) {
-    // TODO: execute e retorne o resultado do callback.
+  return transformacao(texto);
 }
 
-// TODO: crie os dois callbacks e teste as entradas.
+function paraMaiusculas(texto) {
+  return texto.toUpperCase();
+}
 
+function paraSlug(texto) {
+  return texto.replaceAll(" ", "-"); // .replace() troca a primeira ocorrência apenas
+}
+
+console.log(processarTexto("curso de js", paraMaiusculas));
+console.log(processarTexto("curso de js", paraSlug));
