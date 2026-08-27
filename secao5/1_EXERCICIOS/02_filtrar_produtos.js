@@ -12,11 +12,14 @@ Saída esperada:
 */
 
 const produtos = [
-    { nome: "Mouse", preco: 80, ativo: true },
-    { nome: "Teclado", preco: 150, ativo: true },
-    { nome: "Fone", preco: 90, ativo: false },
-    { nome: "Cabo", preco: 25, ativo: true },
+  { nome: "Mouse", preco: 80, ativo: true },
+  { nome: "Teclado", preco: 150, ativo: true },
+  { nome: "Fone", preco: 90, ativo: false },
+  { nome: "Cabo", preco: 25, ativo: true },
 ];
 
-// TODO: filtre e exiba os produtos válidos.
-
+const produtosAtivosMax100 = produtos.filter(
+  // não precisa colocar "produto.ativo == true" porque já é uma operação binária
+  (produto) => produto.preco <= 100 && produto.ativo,
+);
+console.log(produtosAtivosMax100);
