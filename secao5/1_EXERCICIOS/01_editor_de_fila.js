@@ -11,5 +11,7 @@ Saída esperada: [ 'Ana', 'Davi', 'Caio', 'Elisa' ]
 
 const fila = ["Ana", "Beto", "Caio", "Eva"];
 
-// TODO: faça as três alterações e exiba a fila.
-
+fila.splice(1, 1);
+fila.splice(1, 0, "Davi");
+fila.splice(3, 1, "Elisa");
+console.log(fila);
