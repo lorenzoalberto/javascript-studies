@@ -12,9 +12,16 @@ Saída esperada:
 */
 
 const itens = [
-    { produto: "Livro", preco: 40, quantidade: 2 },
-    { produto: "Caneta", preco: 5, quantidade: 3 },
+  { produto: "Livro", preco: 40, quantidade: 2 },
+  { produto: "Caneta", preco: 5, quantidade: 3 },
 ];
 
-// TODO: mapeie e exiba o novo array.
+// o intuito do map é transformar algo em outra coisa
+const precoTotal = itens.map((item) => {
+  return {
+    produto: item.produto,
+    total: item.preco * item.quantidade,
+  };
+});
 
+console.log(precoTotal);
