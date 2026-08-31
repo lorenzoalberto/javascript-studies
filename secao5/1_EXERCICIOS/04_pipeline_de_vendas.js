@@ -10,10 +10,14 @@ Saída esperada: 135
 */
 
 const vendas = [
-    { preco: 30, quantidade: 2, paga: true },
-    { preco: 50, quantidade: 1, paga: false },
-    { preco: 25, quantidade: 3, paga: true },
+  { preco: 30, quantidade: 2, paga: true },
+  { preco: 50, quantidade: 1, paga: false },
+  { preco: 25, quantidade: 3, paga: true },
 ];
 
-// TODO: crie o pipeline e exiba o faturamento.
+const somaTotal = vendas
+  .filter((venda) => venda.paga)
+  .map((venda) => venda.preco * venda.quantidade)
+  .reduce((acumulador, total) => acumulador + total, 0);
 
+console.log(somaTotal); // 135
