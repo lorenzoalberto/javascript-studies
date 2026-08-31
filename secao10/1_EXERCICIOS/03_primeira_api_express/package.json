@@ -1,0 +1,11 @@
+{
+  "name": "exercicio-primeira-api-express",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
