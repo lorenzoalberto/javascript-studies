@@ -9,11 +9,22 @@ Saída esperada:
 */
 
 const equipe = [
-    { nome: "Ana", funcao: "dev" },
-    { nome: "Bia", funcao: "design" },
-    { nome: "Caio", funcao: "dev" },
-    { nome: "Davi", funcao: "design" },
+  { nome: "Ana", funcao: "dev" },
+  { nome: "Bia", funcao: "design" },
+  { nome: "Caio", funcao: "dev" },
+  { nome: "Davi", funcao: "design" },
 ];
 
-// TODO: agrupe e exiba o resultado.
+const nomesPorFuncao = equipe.reduce((acumulador, pessoa) => {
+  const funcao = pessoa.funcao;
 
+  if (!acumulador[funcao]) {
+    acumulador[funcao] = [];
+  }
+
+  acumulador[funcao].push(pessoa.nome);
+
+  return acumulador;
+}, {});
+
+console.log(nomesPorFuncao);
